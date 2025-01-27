@@ -44,8 +44,9 @@ if st.button("Start Chat"):
     st.session_state.start_chat = True
     thread = client.beta.threads.create()
     st.session_state.thread_id = thread.id
-st.image("Jay Chatbot Image.jpg")
+
 st.title("Jay Chatbot")
+st.image("Jay Chatbot Image.jpg")
 st.write("How can I help you with History 1301?")
 # st.write("Ask me things like:")
 # st.write(":blue[**Explain Module 1 Quiz 2 question 3**] OR :blue[**Help solve module 3 Quiz 1 question 3**] OR :blue[**copy-paste the question after clicking Start Chat**]")
